@@ -1,0 +1,14 @@
+services:
+  next-site:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ${SITE_NAME}
+    restart: always
+    ports:
+      - "${PORT}:3000"
+    env_file: .env
+    environment:
+      - NODE_ENV=${NODE_ENV}
+      - DATABASE_URL=${DATABASE_URL}
+      - AUTH_SECRET=${AUTH_SECRET}
