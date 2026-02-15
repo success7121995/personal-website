@@ -4,8 +4,6 @@ const MenuSVG = ({ className, ...props }: SVGProps) => {
     return (
         <svg
         className={className}
-        width="45" 
-        height="45" 
         viewBox="0 0 1357 1138" 
         fill="none" 
         xmlns="http://www.w3.org/2000/svg"
