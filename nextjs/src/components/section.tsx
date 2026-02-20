@@ -43,7 +43,7 @@ const Section = ({
                 <div className={`${offsetClasses}`}>
                     <SpeechBubble
                         text={title}
-                        className={`${speechBubbleClassName} font-primary text-xl font-bold`}
+                        className={`${speechBubbleClassName} font-primary text-3xl font-bold`}
                         isReversed={isReversed}
                     />
                 </div>

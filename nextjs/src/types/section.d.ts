@@ -1,14 +1,14 @@
 export interface SectionProps {
     title: string
     template: JSX.Element
-    content: TemplateData
+    content: TemplateProps
     contentAlign: 'left' | 'center' | 'right'
 }
 
 export type TemplateProps = 
     | AboutMeTemplateProps
     | WorkExperienceTemplateProps[]
-
+    | EducationTemplateProps[]
 
 /*********** Template Props ***********/
 export interface AboutMeTemplateProps {
@@ -22,4 +22,13 @@ export interface WorkExperienceTemplateProps {
     startDate: Date
     endDate?: Date
     description?: string
+}
+
+export interface EducationTemplateProps {
+    course: string
+    institutionName: string
+    startDate: Date
+    endDate?: Date
+    description?: string
+    imageUrl?: string
 }
